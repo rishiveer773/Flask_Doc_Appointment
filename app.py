@@ -4,11 +4,18 @@ __name__ = "__main__"
 
 app = Flask(__name__)
 
-print('Hi')
-
+#--------------ADDING ROUTES---------------------------
 @app.route('/')
 def homepage():
     return render_template('homepage.html')
+
+@app.route('/userlogin')
+def userlogin():
+    return render_template('userlogin.html')
+
+@app.rout('/adminlogin')
+def adminlogin():
+    return render_template('adminlogin.html')
 
 if __name__ == "__main__":
     app.run(debug = True)
