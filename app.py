@@ -9,9 +9,9 @@ app = Flask(__name__)
 def homepage():
     return render_template('homepage.html')
 
-@app.route('/userlogin')
-def userlogin():
-    return render_template('userlogin.html')
+@app.route('/userlogin/<username>')
+def userlogin(username):
+    return render_template('userlogin.html', username=username)
 
 @app.route('/adminlogin')
 def adminlogin():
