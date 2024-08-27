@@ -13,7 +13,7 @@ def homepage():
 def userlogin():
     return render_template('userlogin.html')
 
-@app.rout('/adminlogin')
+@app.route('/adminlogin')
 def adminlogin():
     return render_template('adminlogin.html')
 
