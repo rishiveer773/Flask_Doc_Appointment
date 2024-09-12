@@ -1,4 +1,4 @@
-from flask import Flask, render_template, request, url_for, get_flashed_messages, session
+from flask import Flask, render_template, request, url_for, get_flashed_messages, session, flash
 
 __name__ = "__main__"
 app = Flask(__name__)
@@ -13,8 +13,6 @@ def homepage():
 @app.route('/userlogin', methods = ['POST', 'GET'])
 def userlogin():
     error = None
-    if request.method == "POST":
-        if valid_login
     return render_template('userlogin.html', error = error)
 
 @app.route('/adminlogin', methods = ['POST', 'GET'])
