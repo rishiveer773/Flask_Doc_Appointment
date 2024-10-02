@@ -11,9 +11,8 @@ def homepage():
     return render_template('homepage.html')
 
 @app.route('/userlogin', methods = ['POST', 'GET'])
-def userlogin():
-    error = None
-    return render_template('userlogin.html', error = error)
+def patientlogin():
+    return render_template('patientlogin.html', error = error)
 
 @app.route('/adminlogin', methods = ['POST', 'GET'])
 def adminlogin():
