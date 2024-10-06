@@ -10,7 +10,7 @@ app.secret_key = "test_push"
 def homepage():
     return render_template('homepage.html')
 
-@app.route('/userlogin', methods = ['POST', 'GET'])
+@app.route('/patientlogin', methods = ['POST', 'GET'])
 def patientlogin():
     error = None
     return render_template('patientlogin.html', error = error)
