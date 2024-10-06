@@ -12,6 +12,7 @@ def homepage():
 
 @app.route('/userlogin', methods = ['POST', 'GET'])
 def patientlogin():
+    error = None
     return render_template('patientlogin.html', error = error)
 
 @app.route('/adminlogin', methods = ['POST', 'GET'])
